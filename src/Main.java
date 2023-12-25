@@ -28,7 +28,4 @@ public class Main {
         System.out.println(initialQuantity + " - " + reverseQuantity +  " + " + reversed + " = " + ourInvariableResult);
         return ourInvariableResult;
     }
-    public static void setSubtractionResult(int subtractionResult) {
-        Main.subtractionResult = subtractionResult;
-    }
-}
+   }
