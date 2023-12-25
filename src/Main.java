@@ -1,8 +1,5 @@
 public class Main {
 
-
-    private static int subtractionResult;
-
     public static void main(String[] args) {
 
         for (int i = 3; i <= 9; i++) {
@@ -10,18 +7,11 @@ public class Main {
                 for (int k = 1; k <= j; k++) {
                     int initialQuantity = i * 100 + j * 10 + k;
                     int reverseQuantity = k * 100 + j * 10 + i;
-                   // System.out.println(initialQuantity + " - " + reverseQuantity);
-
-                    final int ourInvariableResult = getOurInvariableResult(initialQuantity, reverseQuantity);
-
-                    System.out.println(initialQuantity + " - " + reverseQuantity +  " + " + reversed + " = " + ourInvariableResult);
+                   final int ourInvariableResult = getOurInvariableResult(initialQuantity, reverseQuantity);
                 }
-
             }
         }
-
     }
-
     private static int getOurInvariableResult(int initialQuantity, int reverseQuantity) {
         int subtractionResult = initialQuantity - reverseQuantity;
         int savedSubtractionResult = subtractionResult;
@@ -35,10 +25,9 @@ public class Main {
             }
         }
         int ourInvariableResult = savedSubtractionResult + reversed;
+        System.out.println(initialQuantity + " - " + reverseQuantity +  " + " + reversed + " = " + ourInvariableResult);
         return ourInvariableResult;
-
     }
-
     public static void setSubtractionResult(int subtractionResult) {
         Main.subtractionResult = subtractionResult;
     }
